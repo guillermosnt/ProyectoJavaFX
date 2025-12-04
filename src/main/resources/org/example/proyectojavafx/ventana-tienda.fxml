@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectojavafx.VentanaTienda">
+   <children>
+       <fx:include source="menu.fxml" />
+       <ImageView fitHeight="240.0" fitWidth="259.0" layoutX="180.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/rectangulo-tienda.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="140.0" layoutX="35.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/rectangulo-tienda.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="140.0" layoutX="427.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/rectangulo-tienda.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="total_llaves" layoutX="237.0" layoutY="343.0" styleClass="total_llaves" stylesheets="@../../../css/estilo.css" text="220" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_central" layoutX="242.0" layoutY="277.0" styleClass="total_central" stylesheets="@../../../css/estilo.css" text="500" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_izquierda" layoutX="72.0" layoutY="245.0" styleClass="total_izquierda" stylesheets="@../../../css/estilo.css" text="80" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="total_derecha" layoutX="458.0" layoutY="245.0" styleClass="total_derecha" stylesheets="@../../../css/estilo.css" text="120" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="125.0" fitWidth="113.0" layoutX="50.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/portaventura-logo-png_seeklogo-110893.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="140.0" fitWidth="121.0" layoutX="436.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/raton219337.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="179.0" fitWidth="214.0" layoutX="213.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/pngtree-christmas-gift-basket-filled-with-assorted-presents-png-image_20517186.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></DropShadow>
+         </effect>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="9.0" text="Tareas" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="10.0" text="Logros" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="10.0" text="Tienda" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="10.0" text="Llaves" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="10.0" onMouseClicked="#abrirFormulario" text="Formulario" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="528.0" layoutY="10.0" text="Ajustes" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

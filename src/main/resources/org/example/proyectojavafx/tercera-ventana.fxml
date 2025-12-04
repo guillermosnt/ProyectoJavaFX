@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="fondo" prefHeight="400.0" prefWidth="599.0" styleClass="fondo" stylesheets="@../../../css/estilo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectojavafx.TerceraVentana">
+   <children>
+       <fx:include source="menu.fxml" />
+       <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Abrir Ventana" />
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#cerrarVentana" text="Cerrar" />
+      <Separator layoutX="11.0" layoutY="-75.0" orientation="VERTICAL" prefHeight="42.0" prefWidth="6.0" />
+      <Label layoutX="61.0" layoutY="63.0" prefHeight="62.0" prefWidth="478.0" text="¡Sorteo de Navidad!" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="50.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="170.0" fitWidth="325.0" layoutX="47.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/GnilnqsWgAE1biP.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="prueba" fitHeight="170.0" fitWidth="208.0" layoutX="379.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/440.jpg"  />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="134.0" layoutY="8.0" text="Tareas" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="9.0" text="Logros" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="276.0" onMouseClicked="#abrirVentanaTienda" layoutY="9.0" text="Tienda" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="10.0" text="Llaves" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" onMouseClicked="#abrirFormulario" layoutY="10.0" text="Formulario" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="530.0" onMouseClicked="#abrirAjustes" layoutY="10.0" text="Ajustes" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

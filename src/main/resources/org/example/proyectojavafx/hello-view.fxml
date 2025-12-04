@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="324.0" prefWidth="517.0" spacing="20.0" style="-fx-background-color: white;" styleClass="back" stylesheets="@../../../css/estilo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectojavafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label prefHeight="79.0" prefWidth="329.0" text="MindTask">
+      <font>
+         <Font name="Elephant" size="62.0" />
+      </font>
+   </Label>
+   <Label prefHeight="18.0" prefWidth="87.0" text="Inicio de Sesión" textFill="#2e2c73" />
+   <Separator prefWidth="200.0" />
+   <AnchorPane prefHeight="302.0" prefWidth="478.0" stylesheets="@../../../css/estilo.css">
+      <children>
+          <Button layoutY="219.0" onAction="#abrirSegundaVentana" text="Abrir ventana" />
+          <Button layoutX="426.0" layoutY="219.0" mnemonicParsing="false" onAction="#cerrarVentana" text="Cerrar" />
+         <Label layoutX="75.0" layoutY="-9.0" prefHeight="18.0" prefWidth="133.0" text="EMAIL:">
+            <font>
+               <Font name="Arial Nova" size="9.0" />
+            </font>
+         </Label>
+         <TextField id="hola" fx:id="usuario_nombreUnico" layoutX="75.0" layoutY="14.0" prefHeight="26.0" prefWidth="327.0" styleClass="clase-email" stylesheets="@../../../css/estilo.css" />
+         <Label layoutX="74.0" layoutY="51.0" prefHeight="18.0" prefWidth="134.0" text="CONTRASEÑA:">
+            <font>
+               <Font name="Arial Nova" size="9.0" />
+            </font>
+         </Label>
+         <TextField fx:id="usuario_contrasenia" layoutX="75.0" layoutY="70.0" prefHeight="26.0" prefWidth="327.0" styleClass="clase-contrasena" stylesheets="@../../../css/estilo.css" />
+         <Button defaultButton="true" layoutX="77.0" layoutY="123.0" mnemonicParsing="false" onAction="#validarDatos" prefHeight="26.0" prefWidth="327.0" styleClass="clase-boton" stylesheets="@../../../css/estilo.css" text="Iniciar Sesión" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Ebrima" size="17.0" />
+            </font>
+         </Button>
+         <Button layoutX="56.0" layoutY="178.0" mnemonicParsing="false" styleClass="boton-olvidado" stylesheets="@../../../css/estilo.css" text="¿Has olvidado la contraseña?" textFill="#381b76" />
+         <Separator layoutX="237.0" layoutY="177.0" orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button layoutX="252.0" layoutY="178.0" mnemonicParsing="false" styleClass="boton-otra-manera" stylesheets="@../../../css/estilo.css" text="Iniciar sesión de otra manera" textFill="#381b76" />
+         <Button layoutX="187.0" layoutY="206.0" mnemonicParsing="false" onAction="#abrirVentanaCrearCuenta" styleClass="boton-crear-cuenta" stylesheets="@../../../css/estilo.css" text="Crear una cuenta" textFill="#381b76" />
+      </children>
+   </AnchorPane>
+</VBox>
