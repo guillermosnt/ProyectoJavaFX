@@ -2,7 +2,9 @@ package org.example.proyectojavafx;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -48,7 +50,7 @@ public class VentanaRegistro {
             String apellidos = usuario_apellidos.getText();
             String n_unico = usuario_nombreUnico.getText();
             String contrasenia = usuario_contrasenia.getText();
-            
+
             bw.write(nombre);
             bw.write(";");
             bw.write(apellidos);
@@ -66,6 +68,17 @@ public class VentanaRegistro {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @FXML
+    protected void abrirGuiaRegistro() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("guia-registro.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage newStage = new Stage();
+        newStage.setTitle("Guia de Registro");
+        newStage.setScene(scene);
+        newStage.show();
+
     }
 
     @FXML

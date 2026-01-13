@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectojavafx.Formulario">
+    <children>
+        <Label layoutX="117.0" layoutY="27.0" text="Guía de formulario:">
+            <font>
+                <Font name="Arial Nova Bold Italic" size="41.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="102.0" text="Correo electrónico">
+            <font>
+                <Font name="Arial Nova Bold" size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="121.0" prefHeight="28.0" prefWidth="566.0"
+               text="Introduce un correo existente previamente que contenga el carácter @...">
+            <font>
+                <Font size="11.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="158.0" text="Valoración de la aplicación">
+            <font>
+                <Font name="Arial Nova Bold" size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="177.0" prefHeight="28.0" prefWidth="566.0"
+               text="Mueve haca izquierda o derecho el circulo para completar el campo...">
+            <font>
+                <Font size="11.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="215.0" text="Sexo y Estado Civil">
+            <font>
+                <Font name="Arial Nova Bold" size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="234.0" prefHeight="28.0" prefWidth="566.0"
+               text="Selecciona dando click con el ratón izquierdo, dentro de los circulos que aparecen en el campo para completarlo...">
+            <font>
+                <Font size="11.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="254.0" prefHeight="28.0" prefWidth="566.0"
+               text="Para el estado civil, seleccione una de las opciones que se muestran en pantalla...">
+            <font>
+                <Font size="11.0"/>
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="295.0" prefHeight="28.0" prefWidth="566.0"
+               text="Para que el formulario sea enviado de manera correcta, se deben rellenar todos los campos que se solicitan. ">
+            <font>
+                <Font size="11.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

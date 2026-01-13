@@ -85,4 +85,15 @@ public class Formulario {
         newStage.show();
     }
 
+    @FXML
+    protected void abrirGuiaFormulario() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("formulario-ayuda.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage newStage = new Stage();
+        newStage.setTitle("Guia Formulario");
+        newStage.setScene(scene);
+        newStage.show();
+
+    }
+
 }
